@@ -4,21 +4,17 @@ public class SpacedLogger implements Logger {
 
 	@Override
 	 public void log(String messageLog) {
-char[] messageLogArray  = messageLog.toCharArray();
-
-	String messageLog;
 	for (int i = 0; i < messageLog.length(); i++)	{	
-	System.out.print(messageLogArray[i] + space);
+	System.out.print(messageLog.charAt(i) + space);
 				}		
 }
 	@Override
 	public void error(String messageError) {
-	for (char M : messageError.toCharArray())	{
-	String spacedError = M + space;		
-	System.out.print("ERROR: " + spacedError);
+		System.out.print("ERROR: " );
+		for (int i = 0; i < messageError.length(); i++)	{	
+			System.out.print(messageError.charAt(i) + space);
+						}		
 	}
-	
-}
-}			
-				
+	}
+			
 		

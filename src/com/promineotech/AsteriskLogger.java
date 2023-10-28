@@ -4,7 +4,7 @@ public class AsteriskLogger implements Logger {
 
 	@Override
 	 public void log(String messageLog) {
-				System.out.println("***" + messageLog + "***");
+				System.out.println(asterisk + messageLog + asterisk);
 			}
 			@Override
 			 public void error(String messageError) {

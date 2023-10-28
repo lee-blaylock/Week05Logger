@@ -5,7 +5,6 @@ public class App  {
 	public static void main(String[] args) {
 		String messageLog = "Have a nice day";
 		String messageError = "Interface not found";
-		System.out.println(messageLog);
 
 		AsteriskLogger asteriskLogger = new AsteriskLogger();
 		asteriskLogger.log(messageLog);
@@ -13,6 +12,7 @@ public class App  {
 		
 		SpacedLogger spacedLogger = new SpacedLogger();
 		spacedLogger.log(messageLog);
+		System.out.println();
 		spacedLogger.error(messageError);
 	}
 
